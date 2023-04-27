@@ -1,0 +1,15 @@
+@startuml
+set namespaceSeparator ::
+
+class "singleton_pattern::singleton_pattern.dart::UserPreferences" {
+  {static} -UserPreferences _instance
+  -String _username
+  -bool _darkModeEnabled
+  +String username
+  +bool darkModeEnabled
+}
+
+"singleton_pattern::singleton_pattern.dart::UserPreferences" o-- "singleton_pattern::singleton_pattern.dart::UserPreferences"
+
+
+@enduml
